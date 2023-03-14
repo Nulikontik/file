@@ -22,20 +22,19 @@
     <div class="container content">
       <div class="row">
         <div class="col-md-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item">Biore</a>
-            <a href="#" class="list-group-item">Kose</a>
-            <a href="#" class="list-group-item">Shiseido</a>
-            <a href="#" class="list-group-item">Cow</a>
-            <a href="#" class="list-group-item">Utena</a>
-            <a href="#" class="list-group-item">Kaneyo</a>
-            <a href="#" class="list-group-item">Kao</a>
-            <a href="#" class="list-group-item">Kanebo</a>
+          <input type="text" placeholder="Search Product" id="search" />
+          <div class="block">
+            <button class="btn btn-clicked" data-filter="all">All</button>
+            <button class="btn" data-filter="biore">Biore</button>
+            <button class="btn" data-filter="hoshi">Hoshi</button>
+            <button class="btn" data-filter="algae">Algae</button>
+            <button class="btn" data-filter="kose">Kose</button>
+            <button class="btn" data-filter="cow">Cow</button>
           </div>
         </div>
         <div class="col-md-8 products">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="hoshi">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
@@ -51,7 +50,7 @@
                 <p class="product-price">Цена: 114сом</p>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="cow">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/cow.jpeg" alt="" /></a>
@@ -67,7 +66,7 @@
                 <p class="product-price">Цена: 105сом</p>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="cow">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/cow1.jpeg" alt="" /></a>
@@ -83,9 +82,7 @@
                 <p class="product-price">Цена: 600сом</p>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="biore">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/biore.jpeg" alt="" /></a>
@@ -101,7 +98,7 @@
                 <p class="product-price">Цена: 540сом</p>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="biore">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/biore1.jpeg" alt="" /></a>
@@ -117,7 +114,8 @@
                 <p class="product-price">Цена: 540сом</p>
               </div>
             </div>
-            <div class="col-sm-4">
+
+            <div class="box col-sm-4" data-item="dental">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
@@ -134,7 +132,7 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="algae">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/Algae.jpeg" alt="" /></a>
@@ -142,13 +140,17 @@
                 <p class="product-title">
                   <a href="#">Algae</a>
                 </p>
-                <p class="product-desc">Japan Algae Спирулина 100% .</p>
+                <p class="product-desc">
+                  Japan Algae Спирулина 100%. Высококачественная пищевая добавка
+                  из уникальной водоросли спирулины, от ведущего японского
+                  производителя компании ALGAE
+                </p>
                 <p class="product-artikul">Артикул: 4937224924644</p>
                 <p class="product-price">Цена: 2 700сом</p>
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="hoshi">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
@@ -165,7 +167,41 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="box col-sm-4" data-item="hoshi">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="#">Hoshi</a>
+                </p>
+                <p class="product-desc">
+                  oshi Гигиенические женские прокладки. НОЧНЫЕ (29см / 5капель),
+                  8штук.
+                </p>
+                <p class="product-artikul">Артикул: 6931882020968</p>
+                <p class="product-price">Price: 114сом</p>
+              </div>
+            </div>
+
+            <div class="box col-sm-4" data-item="hoshi">
+              <div class="product">
+                <div class="product-img">
+                  <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
+                </div>
+                <p class="product-title">
+                  <a href="#">Hoshi</a>
+                </p>
+                <p class="product-desc">
+                  oshi Гигиенические женские прокладки. НОЧНЫЕ (29см / 5капель),
+                  8штук.
+                </p>
+                <p class="product-artikul">Артикул: 6931882020968</p>
+                <p class="product-price">Price: 114сом</p>
+              </div>
+            </div>
+
+            <div class="box col-sm-4" data-item="hoshi">
               <div class="product">
                 <div class="product-img">
                   <a href="#"><img src="./img/20502474.jpg" alt="" /></a>
@@ -184,13 +220,13 @@
           </div>
         </div>
       </div>
-      <div class="pag">
+      <!-- <div class="pag">
         <ul id="pagination">
           <li id="prev"><a href="#" onclick="" class="prev">Prev</a></li>
           <li id="num">1</li>
           <li id="next"><a href="#" class="next">Next</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

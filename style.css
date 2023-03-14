@@ -56,12 +56,11 @@ img {
   color: #0000005f;
 }
 .product-price {
-  bottom: 15px;
-  left: 0;
-  /* position: absolute; */
-  width: 100%;
+  margin-bottom: 15px;
+  /* left: 0; */
+  /* width: 100%; */
   color: #000000;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 500;
 }
 
@@ -77,4 +76,20 @@ img {
 }
 #next {
   margin-left: 1rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0.502);
+  text-align: start;
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+#search {
+  padding: 8px 133px 8px 5px;
+  margin-bottom: 4px;
+  font-size: 2rem;
 }
